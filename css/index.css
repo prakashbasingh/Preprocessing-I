@@ -134,6 +134,199 @@ html,
 body {
   height: 100%;
 }
-
-/* CSS styles begin heare */
-
+@font-face {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Sen Regular'), local('Sen-Regular'), url(https://fonts.gstatic.com/s/sen/v1/6xKjdSxYI9_3nPWI.ttf) format('truetype');
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 2rem;
+}
+h1 {
+  font-family: 'Sen', sans-serif;
+}
+p {
+  font-family: 'Lato', sans-serif;
+  border: 1px solid grey;
+  pading: 2%;
+}
+nav {
+  width: 100%;
+  height: 2rem;
+  margin: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: orange;
+  font-weight: bold;
+  border-radius: 2rem;
+}
+@media (max-width: 800px) {
+  nav {
+    width: 100%;
+    justify-content: center;
+    background: forestgreen;
+  }
+}
+@media (max-width: 500px) {
+  nav {
+    justify-content: center;
+    flex-direction: column;
+    background-color: orange;
+  }
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  margin: 0 20px;
+}
+nav a:hover {
+  color: red;
+  background: palegreen;
+}
+.header {
+  width: 100%;
+  height: 55%;
+  background: palegreen;
+  border-radius: 2rem;
+}
+@media (max-width: 800px) {
+  .header {
+    width: 90%;
+    background: gold;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .header {
+    width: 90%;
+    background: palegreen;
+  }
+}
+.header .image {
+  height: 50%;
+  width: 40%;
+  margin: 4%;
+}
+@media (max-width: 500px) {
+  .header .image {
+    justify-content: center;
+  }
+}
+.header .mypic {
+  height: 100%;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 1rem;
+}
+.header .firstPara {
+  margin: 4%;
+}
+@media (max-width: 500px) {
+  .header .firstPara {
+    justify-content: center;
+  }
+}
+.header .button-parent {
+  display: flex;
+  justify-content: center;
+}
+.header .secondPara {
+  margin: 4%;
+}
+@media (max-width: 500px) {
+  .header .secondPara {
+    justify-content: center;
+  }
+}
+.header .secondPara button {
+  height: 40px;
+  width: 110px;
+  color: white;
+  background: darkolivegreen;
+  border-radius: 4px;
+  margin: 2%;
+}
+@media (max-width: 500px) {
+  .header .secondPara button {
+    justify-content: center;
+  }
+}
+.firstBody {
+  width: 100%;
+  height: 35%;
+  background: gainsboro;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 800px) {
+  .firstBody {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .firstBody {
+    justify-content: space-around;
+    justify-content: center;
+  }
+}
+.firstBody .intro {
+  width: 45%;
+  height: 95%;
+  margin: 1%;
+  text-align: left;
+}
+.firstBody .list {
+  width: 45%;
+  Height: 95%;
+  margin: 1%;
+}
+.firstBody .list li {
+  width: 100%;
+  height: 40px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  table {
+    justify-content: space-around;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  table {
+    justify-content: space-around;
+    justify-content: center;
+  }
+}
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+tr:nth-child(even) {
+  background: #f2f2f2;
+}
+footer {
+  width: 100%;
+  height: 5%;
+  background: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+}
