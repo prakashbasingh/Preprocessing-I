@@ -1,1 +1,353 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 90%;
+}
+@font-face {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Sen Regular'), local('Sen-Regular'), url(https://fonts.gstatic.com/s/sen/v1/6xKjdSxYI9_3nPWI.ttf) format('truetype');
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 2rem;
+}
+h1 {
+  font-family: 'Sen', sans-serif;
+}
+p {
+  font-family: 'Lato', sans-serif;
+  line-height: 1;
+  border: 1px solid grey;
+  border-radius: 1rem;
+  padding: 1%;
+}
+nav {
+  width: 100%;
+  height: 2rem;
+  margin: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: orange;
+  font-weight: bold;
+  border-radius: 2rem;
+}
+@media (max-width: 800px) {
+  nav {
+    width: 100%;
+    justify-content: center;
+    background: forestgreen;
+  }
+}
+@media (max-width: 500px) {
+  nav {
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: orange;
+  }
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  margin: 2px 20px;
+  width: 90%;
+  text-align: center;
+}
+nav a:hover {
+  color: red;
+  background: palegreen;
+}
+@media (max-width: 500px) {
+  nav a {
+    border: 1px solid green;
+    border-radius: 1rem;
+  }
+}
+.header {
+  width: 100%;
+  height: 55%;
+  background: palegreen;
+  border-radius: 2rem;
+}
+@media (max-width: 800px) {
+  .header {
+    width: 100%;
+    height: 40%;
+    background: gold;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .header {
+    width: 100%;
+    height: 40%;
+    background: palegreen;
+  }
+}
+.header .image {
+  height: 50%;
+  width: 40%;
+  margin: 2%;
+}
+@media (max-width: 500px) {
+  .header .image {
+    justify-content: center;
+  }
+}
+.header .mypic {
+  height: 100%;
+  width: 50%;
+  margin-top: 10px;
+  border-radius: 1rem;
+}
+.header .firstPara {
+  margin: 2%;
+}
+@media (max-width: 500px) {
+  .header .firstPara {
+    justify-content: center;
+  }
+}
+.header .button-parent {
+  display: flex;
+  justify-content: center;
+}
+.header .secondPara {
+  margin: 2%;
+}
+@media (max-width: 500px) {
+  .header .secondPara {
+    justify-content: center;
+  }
+}
+.header .secondPara button {
+  height: 40px;
+  width: 110px;
+  color: white;
+  background: darkolivegreen;
+  border: 1px solid red;
+  border-radius: 1rem;
+  margin: 1%;
+}
+@media (max-width: 500px) {
+  .header .secondPara button {
+    justify-content: center;
+  }
+}
+.firstBody {
+  width: 100%;
+  height: 35%;
+  background: gainsboro;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 800px) {
+  .firstBody {
+    width: 100%;
+    height: 40%;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .firstBody {
+    width: 100%;
+    height: 50%;
+    justify-content: space-around;
+    justify-content: center;
+  }
+}
+.firstBody .intro {
+  width: 45%;
+  height: 95%;
+  margin: 1%;
+  text-align: left;
+}
+.firstBody .list {
+  width: 45%;
+  Height: 95%;
+  margin: 1%;
+}
+.firstBody .list li {
+  width: 100%;
+  height: 40px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  table {
+    justify-content: space-around;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  table {
+    justify-content: space-around;
+    justify-content: center;
+  }
+}
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+tr:nth-child(even) {
+  background: #f2f2f2;
+}
+footer {
+  width: 100%;
+  height: 5%;
+  background: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+}
