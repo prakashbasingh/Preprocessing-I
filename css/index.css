@@ -133,6 +133,7 @@ table {
 html,
 body {
   height: 100%;
+  width: 90%;
 }
 @font-face {
   font-family: 'Sen';
@@ -153,8 +154,10 @@ h1 {
 }
 p {
   font-family: 'Lato', sans-serif;
+  line-height: 1;
   border: 1px solid grey;
-  pading: 2%;
+  border-radius: 1rem;
+  padding: 1%;
 }
 nav {
   width: 100%;
@@ -176,19 +179,30 @@ nav {
 }
 @media (max-width: 500px) {
   nav {
+    width: 100%;
+    height: 10%;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
     background-color: orange;
   }
 }
 nav a {
   text-decoration: none;
   color: black;
-  margin: 0 20px;
+  margin: 2px 20px;
+  width: 90%;
+  text-align: center;
 }
 nav a:hover {
   color: red;
   background: palegreen;
+}
+@media (max-width: 500px) {
+  nav a {
+    border: 1px solid green;
+    border-radius: 1rem;
+  }
 }
 .header {
   width: 100%;
@@ -198,21 +212,23 @@ nav a:hover {
 }
 @media (max-width: 800px) {
   .header {
-    width: 90%;
+    width: 100%;
+    height: 40%;
     background: gold;
     justify-content: center;
   }
 }
 @media (max-width: 500px) {
   .header {
-    width: 90%;
+    width: 100%;
+    height: 40%;
     background: palegreen;
   }
 }
 .header .image {
   height: 50%;
   width: 40%;
-  margin: 4%;
+  margin: 2%;
 }
 @media (max-width: 500px) {
   .header .image {
@@ -226,7 +242,7 @@ nav a:hover {
   border-radius: 1rem;
 }
 .header .firstPara {
-  margin: 4%;
+  margin: 2%;
 }
 @media (max-width: 500px) {
   .header .firstPara {
@@ -238,7 +254,7 @@ nav a:hover {
   justify-content: center;
 }
 .header .secondPara {
-  margin: 4%;
+  margin: 2%;
 }
 @media (max-width: 500px) {
   .header .secondPara {
@@ -250,8 +266,9 @@ nav a:hover {
   width: 110px;
   color: white;
   background: darkolivegreen;
-  border-radius: 4px;
-  margin: 2%;
+  border: 1px solid red;
+  border-radius: 1rem;
+  margin: 1%;
 }
 @media (max-width: 500px) {
   .header .secondPara button {
@@ -268,12 +285,16 @@ nav a:hover {
 }
 @media (max-width: 800px) {
   .firstBody {
-    flex-direction: column;
+    width: 100%;
+    height: 40%;
+    flex-direction: row;
     justify-content: center;
   }
 }
 @media (max-width: 500px) {
   .firstBody {
+    width: 100%;
+    height: 50%;
     justify-content: space-around;
     justify-content: center;
   }

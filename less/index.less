@@ -56,6 +56,7 @@ table {
 
 html, body {
   height: 100%;
+  width: 90%;
   }
 
 @import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
@@ -74,7 +75,8 @@ html, body {
 }
 .border(){
 	border: 1px solid grey;
-	pading: 2%;
+	border-radius: 1rem;
+	padding: 1%;
 }
 
 
@@ -88,6 +90,8 @@ h1{
 }
 p{
 	font-family: @parafont;
+	line-height: 1;
+	// margin: 1rem;
 	.border();
 }
 nav{ 
@@ -107,18 +111,29 @@ nav{
 	background: @secondcolor;
 	} 
 	@media (max-width: 500px){
-	   justify-content: center;
-	   flex-direction: column;
-	   background-color: @maincolor;
+		width: 100%;
+		height: 10%;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	    background-color: @maincolor;
 	}
   a{
   text-decoration: none;
   color: black;
-  margin: 0 20px; 
+  margin: 2px 20px;
+  width: 90%;
+  text-align: center;
+
   	&:hover{
 		color: red;
 		background: @headercolor;
-  	} 
+	  }
+
+	  @media (max-width: 500px){
+	  border: 1px solid green;
+	  border-radius: 1rem;
+	  }
   }
 }
 
@@ -131,20 +146,22 @@ nav{
   border-radius: 2rem;
   
   @media (max-width: 800px){
-	  width: 90%;
+	  width: 100%;
+	  height: 40%;
 	  background: gold;
 	  justify-content: center;
    } //this closes header media query
 
    @media (max-width: 500px){
-	   width: 90%;
+	   width: 100%;
+	   height: 40%;
 	   background: @headercolor;
    }
 
   .image{
 	  height: 50%;
 	  width: 40%; 
-	  margin: 4%;
+	  margin: 2%;
 
 	  @media (max-width: 500px){
 		justify-content: center;
@@ -158,7 +175,7 @@ nav{
 	  }
 
 		.firstPara{
-			margin: 4%;
+			margin: 2%;
 			@media (max-width: 500px){
 				justify-content: center;
 			}
@@ -167,7 +184,7 @@ nav{
 			.center();
 		}
 		.secondPara{
-			margin: 4%;
+			margin: 2%;
 			@media (max-width: 500px){
 				justify-content: center;
 			}
@@ -177,8 +194,9 @@ nav{
 				width: 110px;
 				color: white;
 				background: darkolivegreen;
-				border-radius: 4px;
-				margin: 2%;
+				border: 1px solid red;
+				border-radius: 1rem;
+				margin: 1%;
 				@media (max-width: 500px){
 					justify-content: center;
 				}
@@ -199,10 +217,14 @@ nav{
 	  justify-content: space-around;
 	  
 	@media (max-width: 800px){
-		flex-direction: column;
+		width: 100%;
+		height: 40%;
+		flex-direction: row;
 		justify-content: center;
 	}
 	@media (max-width: 500px){
+		width: 100%;
+		height: 50%;
 		justify-content: space-around;
 		justify-content: center;
 	}
